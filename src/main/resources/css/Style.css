@@ -1,0 +1,46 @@
+.text-area-bg{
+    #fafafa
+}
+.Transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.primary-background{
+    -fx-background-color: #005691;
+}
+.secondery-background-2{
+    -fx-background-color: #eee;
+}
+.primary-background-2{
+    -fx-background-color: #5B7DB1;
+}
+.secondery-background{
+    -fx-background-color: #F2F2F2;
+}
+.shadow{
+    -fx-effect: dropShadow(Three-pass-box, rgba(0,0,0,0.2) ,10,0,0,10);
+}
+.round-border{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+.login-textFields{
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: #005691;
+}
+
+.settings-card{
+    -fx-background-color: #f2f2f2;
+    -fx-background-radius: 10;
+}
+.Primary-button{
+    -fx-background-color: #005691;
+    -fx-background-radius: 5;
+    -fx-text-fill: #fff;
+}
+.Primary-button: hover{
+    -fx-background-color: #fff;
+    -fx-border-color: #005691;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-text-fill: #005691;
+}

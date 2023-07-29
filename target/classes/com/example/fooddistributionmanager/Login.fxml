@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="primary-background" stylesheets="@../../../css/Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fooddistributionmanager.Login">
+   <children>
+      <Pane prefHeight="106.0" prefWidth="900.0" VBox.vgrow="ALWAYS" />
+      <HBox prefHeight="377.0" prefWidth="900.0">
+         <children>
+            <Pane prefHeight="256.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="TOP_CENTER" prefHeight="347.0" prefWidth="445.0" spacing="15.0" stylesheets="@../../../css/Style.css">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="secondery-background" />
+                  <String fx:value="round-border" />
+               </styleClass>
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Logo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="loginDisplay" textFill="#f55353">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userMail" prefHeight="25.0" prefWidth="316.0" promptText="Email" stylesheets="@../../../css/Style.css">
+                     <VBox.margin>
+                        <Insets left="80.0" right="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="login-textFields" />
+                        <String fx:value="Transparent" />
+                     </styleClass>
+                  </TextField>
+                  <PasswordField fx:id="userPassword" promptText="Password" stylesheets="@../../../css/Style.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="80.0" right="80.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="Transparent" />
+                        <String fx:value="login-textFields" />
+                     </styleClass>
+                  </PasswordField>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#userLogin" prefHeight="34.0" prefWidth="141.0" styleClass="Primary-button" stylesheets="@../../../css/Style.css" text="Sign in" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Hyperlink onAction="#forgotPassword" text="Forgot password?" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="287.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Pane prefHeight="113.0" prefWidth="900.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

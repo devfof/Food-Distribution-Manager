@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fooddistributionmanager.UserRemove">
+   <children>
+      <BorderPane fx:id="borderPane" layoutX="208.0" layoutY="71.0" prefHeight="200.0" prefWidth="200.0" styleClass="primary-background-2" stylesheets="@../../../css/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Pane prefHeight="600.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="600.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <Pane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </top>
+         <bottom>
+            <Pane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="415.0" stylesheets="@../../../css/Style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="53.0" prefWidth="180.0" text="Remove User">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="380.0">
+                     <children>
+                        <Label text="Enter User Email :">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="findEmail" prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: #fafafa;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#removeButton" prefHeight="32.0" prefWidth="105.0" styleClass="Primary-button" stylesheets="@../../../css/Style.css" text="Remove">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="alertDisplay" alignment="CENTER" prefHeight="35.0" prefWidth="243.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="secondery-background" />
+                  <String fx:value="round-border" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

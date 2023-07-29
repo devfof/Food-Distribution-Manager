@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="50.0" prefWidth="870.0" stylesheets="@../../../css/Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fooddistributionmanager.UserShowCard">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="82.0" layoutY="14.0" prefHeight="100.0" prefWidth="725.0" styleClass="Transparent" stylesheets="@../../../css/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Name :">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" prefHeight="17.0" prefWidth="180.0" text="name">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label text="Email :">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" prefHeight="17.0" prefWidth="180.0" text="email">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label text="Account Type :">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="account" prefHeight="17.0" prefWidth="60.0" text="account">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label text="Phone :">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="phone" prefHeight="17.0" prefWidth="147.0" text="phone">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <styleClass>
+      <String fx:value="secondery-background" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>
